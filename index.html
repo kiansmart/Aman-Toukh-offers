@@ -1305,6 +1305,16 @@
             }
         }
     </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.25.0"
+  }
+}
+</script>
 </head>
 <body class="bg-gray-100">
     <!-- Header -->
@@ -1839,7 +1849,7 @@
                 <div class="mt-4 text-center">
                     <p class="text-xs text-gray-500">
                         <i class="fas fa-lock ml-1"></i>
-                        سيتم إرسال طلبك عبر واتساب إلى رقم 01009002381
+                        سيتم إرسال طلبك عبر واتساب إلى رقم 201009002381
                     </p>
                 </div>
             </div>
@@ -3691,7 +3701,7 @@
                     function(position) {
                         const lat = position.coords.latitude;
                         const lng = position.coords.longitude;
-                        locationInput.value = `${lat.toFixed(6)}, ${lng.toFixed(6)}`;
+                        locationInput.value = `https://www.google.com/maps?q=${lat},${lng}`;
                         btnText.textContent = 'تم الحصول على الموقع';
                         locationBtn.disabled = false;
                     },
